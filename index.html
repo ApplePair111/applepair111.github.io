@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Portfolio</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .projects {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .project {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-4px);
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    .project a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ApplePair111</h1>
+    <p>(not-so) 💻 Developer | 🧠 Tinkerer | 📍 Based in Turkey</p>
+  </header>
+
+  <main>
+    <section id="bio">
+      <h2>About Me</h2>
+      <p>
+        I'm a normal human that tries to code and copy-pastes from ChatGPT and I have some stupid, some good ideas about building tools, games, and anything that makes (my because i dont have any followers) life easier or more fun.
+        I work with C++, Python, JavaScript, and I'm exploring hardware integrations with Arduino and Raspberry Pi.
+        This is my personal page where I showcase my projects and experiments.
+        (also dont tell them but i kinda hate apple being so locked down even though i use it for almost everything)
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>GitHub Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3><a href="https://github.com/ApplePair111/SimpleWinBSOD" target="_blank">SimpleWinBSOD</a></h3>
+          <p>A batchfile program to set up the MANUALLY_INITIATED_CRASH BSOD using the reg command</p>
+        </div>
+        <div class="project">
+          <h3><a href="https://github.com/ApplePair111/ArduinoWebIDE" target="_blank">ArduinoWebIDE</a></h3>
+          <p>I tried to maybe run arduino ide on my ipad and it failed because apple apparently made WebSerial unusable on iPads</p>
+        </div>
+        <div class="project">
+          <h3><a href="https://github.com/ApplePair111/pypinstaller" target="_blank">pypinstaller</a></h3>
+          <p>a failed project to get python libs without the APT or Homebrew conflict.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with ❤️ by ApplePair111 – <a href="https://github.com/ApplePair111" target="_blank">GitHub</a>
+  </footer>
+
+</body>
+</html>
